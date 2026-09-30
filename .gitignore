@@ -1,0 +1,10 @@
+node_modules/
+server.log
+*.log
+data/
+extracted/
+*.tar.gz
+*.jpg.orig
+shameersrk-hands-5618240_1920(1).jpg
+.DS_Store
+Thumbs.db
