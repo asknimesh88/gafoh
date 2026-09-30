@@ -28,9 +28,9 @@ if (form) form.addEventListener('submit', async e => {
   status.className = 'status';
   status.textContent = 'Sending...';
   try {
-    const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+    const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
     const data = await res.json();
-    if (!res.ok) throw new Error(data.error);
+    if (!res.ok) throw new Error(data.errors?.[0]?.message || data.error || 'Something went wrong.');
     form.reset();
     status.className = 'status ok';
     status.textContent = 'Thank you! We will get back to you soon.';

@@ -483,7 +483,7 @@ const home = () => layout({
       </div>
 
       <div class="contact-form-wrap">
-        <form class="form" id="contact-form" method="post" action="/api/contact" novalidate>
+        <form class="form" id="contact-form" method="post" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" novalidate>
           <div class="form-head">
             <h3>Send an Official Message</h3>
             <p>Fill out the form below. We typically respond within 1–2 business days.</p>
