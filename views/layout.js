@@ -55,8 +55,10 @@ const layout = ({ title, description, body, path = '' }) => `<!doctype html>
     <div class="footer__col">
       <h5 class="footer__heading">Contact</h5>
       <ul class="footer__links">
-        <li>Pannipitiya, Colombo District<br>Western Province, Sri Lanka 10132</li>
-        <li><a href="tel:+940773957649">+94 077 3957649</a></li>
+        <li><strong style="color:rgba(255,255,255,.7)">City Office</strong><br>Pannipitiya, Colombo District<br>Western Province, Sri Lanka 10132</li>
+        <li><strong style="color:rgba(255,255,255,.7)">Head Office</strong><br>101, Rideevita Road, Maragala<br>Hiramadagama, Rathnapura RN 70296</li>
+        <li><a href="tel:+94702488090">+94 70 248 8090</a></li>
+        <li><a href="tel:+94453134949">+94 (45) 313 4949</a></li>
         <li><a href="mailto:info@gafoh.org">info@gafoh.org</a></li>
       </ul>
     </div>

@@ -431,15 +431,24 @@ const home = () => layout({
         <div class="info-card info-card--dark">
           <h3>Office &amp; Headquarters</h3>
           <p class="address-block">
-            <strong>GAFOH Sri Lanka</strong><br>
+            <strong>City Office</strong><br>
             Pannipitiya, Colombo District<br>
             Western Province, Sri Lanka 10132
           </p>
+          <p class="address-block" style="margin-top:14px">
+            <strong>Head Office</strong><br>
+            101, Rideevita Road, Maragala<br>
+            Hiramadagama, Rathnapura RN 70296
+          </p>
 
           <div class="quick-contacts">
-            <a class="contact-link" href="tel:+940773957649">
+            <a class="contact-link" href="tel:+94702488090">
               <span class="icon-bubble">${icon('phone', 'ico--sm')}</span>
-              <span>+94 077 3957649</span>
+              <span>+94 70 248 8090</span>
+            </a>
+            <a class="contact-link" href="tel:+94453134949">
+              <span class="icon-bubble">${icon('phone', 'ico--sm')}</span>
+              <span>+94 (45) 313 4949</span>
             </a>
             <a class="contact-link" href="mailto:info@gafoh.org">
               <span class="icon-bubble">${icon('mail', 'ico--sm')}</span>
@@ -560,7 +569,7 @@ const support = () => layout({
     <div class="contact-card-simple">
       <p><strong>GAFOH Sri Lanka Administration</strong><br>
       Email: <a href="mailto:info@gafoh.org">info@gafoh.org</a><br>
-      Phone: <a href="tel:+940773957649">+94 077 3957649</a><br>
+      Phone: <a href="tel:+94702488090">+94 70 248 8090</a> / <a href="tel:+94453134949">+94 (45) 313 4949</a><br>
       Pannipitiya, Colombo, Sri Lanka</p>
     </div>
 
@@ -594,7 +603,7 @@ const legalNotice = () => doc('Legal Notice', `
 <h2>Operator &amp; Governance</h2>
 <p><strong>GAFOH Sri Lanka (Global Alliance for Food and One Health)</strong><br>
 Pannipitiya, Colombo, Sri Lanka 10132<br>
-Phone: <a href="tel:+940773957649">+94 077 3957649</a><br>
+Phone: <a href="tel:+94702488090">+94 70 248 8090</a> / <a href="tel:+94453134949">+94 (45) 313 4949</a><br>
 Email: <a href="mailto:info@gafoh.org">info@gafoh.org</a></p>
 
 <h2>Terms of Use</h2>
@@ -614,7 +623,7 @@ const privacy = () => doc('Privacy Policy', `
 
 <h2>Data Controller</h2>
 <p>GAFOH Sri Lanka<br>
-Pannipitiya, Colombo, Sri Lanka 10132<br>
+Pannipitiya, Colombo, Sri Lanka 10132 / Hiramadagama, Rathnapura RN 70296<br>
 Email: <a href="mailto:info@gafoh.org">info@gafoh.org</a></p>
 
 <h2>Information Collected via Inquiries</h2>
