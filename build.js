@@ -11,6 +11,8 @@ const routes = {
   '/support':      'support/index.html',
   '/legal-notice': 'legal-notice/index.html',
   '/privacy':      'privacy/index.html',
+  '/clinic':       'clinic/index.html',
+  '/research':     'research/index.html',
 };
 
 for (const [route, file] of Object.entries(routes)) {

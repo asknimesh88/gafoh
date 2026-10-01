@@ -3,11 +3,32 @@ const nav = [
   ['/#focus', 'What we do'],
   ['/#pillars', 'Pillars'],
   ['https://local.projects.gafoh.org/', 'Projects'],
+  ['/clinic', 'Clinic'],
+  ['/research', 'Research'],
   ['/support', 'Donate'],
   ['/#contact', 'Contact'],
 ];
 
-const layout = ({ title, description, body, path = '' }) => `<!doctype html>
+const BASE = 'https://www.gafoh.org';
+
+const orgSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'NGO',
+  name: 'Global Alliance for Food and One Health (GAFOH) Sri Lanka',
+  alternateName: 'GAFOH Sri Lanka',
+  url: BASE,
+  logo: `${BASE}/img/logo.png`,
+  description: 'GAFOH Sri Lanka is a non-profit NGO uniting communities, agriculture, and science to advance the One Health framework and sustainable food security.',
+  telephone: ['+94702488090', '+94453134949'],
+  email: 'info@gafoh.org',
+  address: [
+    { '@type': 'PostalAddress', streetAddress: 'Pannipitiya', addressLocality: 'Colombo District', addressRegion: 'Western Province', postalCode: '10132', addressCountry: 'LK' },
+    { '@type': 'PostalAddress', streetAddress: '101, Rideevita Road, Maragala', addressLocality: 'Hiramadagama', addressRegion: 'Rathnapura', postalCode: '70296', addressCountry: 'LK' }
+  ],
+  sameAs: ['https://github.com/asknimesh88/gafoh']
+});
+
+const layout = ({ title, description, body, path = '', schema = '' }) => `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -15,8 +36,21 @@ const layout = ({ title, description, body, path = '' }) => `<!doctype html>
 <title>${title}</title>
 <meta name="description" content="${description}">
 <meta name="theme-color" content="#1b6b3a">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="${BASE}${path === '/' ? '' : path}">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${description}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${BASE}${path === '/' ? '' : path}">
+<meta property="og:site_name" content="GAFOH Sri Lanka">
+<meta property="og:locale" content="en_LK">
+<meta property="og:image" content="${BASE}/img/logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${title}">
+<meta name="twitter:description" content="${description}">
 <link rel="icon" href="/img/favicon.png">
-<link rel="stylesheet" href="/css/style.css?v=11">
+<link rel="stylesheet" href="/css/style.css?v=12">
+<script type="application/ld+json">${schema || orgSchema}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

@@ -330,3 +330,47 @@ p { margin: 0 0 1em; }
   .footer__legal { flex-direction: column; gap: 8px; text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ── Clinic & Research additions ─────────────────────────────────────── */
+.page-head--green { background: var(--green-d); color: #fff; }
+.page-head--green .eyebrow { color: var(--gold-l); }
+.page-head--green h1 { color: #fff; }
+.page-head__sub { font-size: 1.15rem; color: rgba(255,255,255,.8); margin-top: 8px; margin-bottom: 0; }
+
+/* Clinic photo gallery */
+.clinic-gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: auto auto; gap: 16px; margin-top: 40px; }
+.clinic-gallery__item { margin: 0; overflow: hidden; border-radius: var(--r); box-shadow: var(--shadow); }
+.clinic-gallery__item--wide { grid-column: 1 / 3; }
+.clinic-gallery__item img { width: 100%; height: 320px; object-fit: cover; display: block; transition: transform .4s; }
+.clinic-gallery__item:hover img { transform: scale(1.03); }
+.clinic-gallery__item figcaption { font-size: .8rem; color: var(--muted); padding: 10px 14px; background: #fff; border-top: 1px solid var(--line); font-weight: 600; }
+
+/* Research fee cards */
+.research-fees { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 40px 0 32px; }
+.fee-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 32px 28px; text-align: center; box-shadow: var(--shadow); }
+.fee-card--featured { border-color: var(--green); border-width: 2px; background: var(--tint); }
+.fee-card__type { font-size: .9rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
+.fee-card__amount { font-size: 2rem; font-weight: 800; color: var(--green-d); margin-bottom: 12px; }
+.fee-card--featured .fee-card__amount { color: var(--green); }
+.fee-card__note { font-size: .85rem; color: var(--muted); margin: 0; }
+.research-fee-note { max-width: 760px; margin: 0 auto; text-align: center; color: var(--muted); font-style: italic; }
+
+/* Disclaimer box */
+.disclaimer-box { display: flex; gap: 24px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: var(--r); padding: 32px; box-shadow: var(--shadow); }
+.disclaimer-box__icon { flex: none; color: var(--gold); margin-top: 2px; }
+.disclaimer-box__title { font-size: 1.1rem; font-weight: 700; color: var(--ink); margin: 0 0 12px; }
+.disclaimer-box p { margin: 0; color: var(--muted); }
+
+/* Responsive: clinic & research */
+@media (max-width: 860px) {
+  .clinic-gallery { grid-template-columns: 1fr 1fr; }
+  .clinic-gallery__item--wide { grid-column: 1 / -1; }
+  .clinic-gallery__item img { height: 240px; }
+  .research-fees { grid-template-columns: 1fr; }
+  .disclaimer-box { flex-direction: column; gap: 16px; }
+}
+@media (max-width: 480px) {
+  .clinic-gallery { grid-template-columns: 1fr; }
+  .clinic-gallery__item img { height: 220px; }
+  .fee-card__amount { font-size: 1.6rem; }
+}
