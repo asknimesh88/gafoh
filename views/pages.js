@@ -577,10 +577,15 @@ const support = () => layout({
     <p>Direct automated online payment processing is currently in setup. To contribute funds, provide equipment/seeds, or discuss institutional grant funding, please reach out directly:</p>
 
     <div class="contact-card-simple">
-      <p><strong>GAFOH Sri Lanka Administration</strong><br>
-      Email: <a href="mailto:info@gafoh.org">info@gafoh.org</a><br>
-      Phone: <a href="tel:+94702488090">+94 70 248 8090</a> / <a href="tel:+94453134949">+94 (45) 313 4949</a><br>
-      Pannipitiya, Colombo, Sri Lanka</p>
+      <p><strong>GAFOH Sri Lanka Administration</strong></p>
+      <p style="margin:4px 0"><strong style="font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)">City Office</strong><br>
+      Pannipitiya, Colombo District<br>
+      Western Province, Sri Lanka 10132</p>
+      <p style="margin:4px 0"><strong style="font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)">Head Office</strong><br>
+      101, Rideevita Road, Maragala<br>
+      Hiramadagama, Rathnapura RN 70296</p>
+      <p style="margin-top:8px">Email: <a href="mailto:info@gafoh.org">info@gafoh.org</a><br>
+      Phone: <a href="tel:+94702488090">+94 70 248 8090</a> / <a href="tel:+94453134949">+94 (45) 313 4949</a></p>
     </div>
 
     <p><a class="btn btn--primary" href="/#contact">Send a direct message</a></p>
