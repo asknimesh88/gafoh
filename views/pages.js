@@ -842,177 +842,163 @@ const research = () => layout({
   path: '/research',
   schema: researchSchema,
   body: `
-<section class="page-head page-head--green">
-  <div class="wrap">
+
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="research-hero">
+  <div class="wrap research-hero__in">
     <p class="eyebrow eyebrow--gold">Global Alliance for Food and One Health — GAFOH</p>
-    <h1>Research and Research Review</h1>
-    <p class="page-head__sub">Research Ethics, Compliance &amp; Responsible Research</p>
+    <h1>Research and<br>Research Review</h1>
+    <p class="research-hero__sub">Research Ethics, Compliance &amp; Responsible Research</p>
+    <p class="research-hero__lead">Promoting responsible research for healthier people, healthier animals and a healthier environment.</p>
+    <div class="research-hero__links">
+      <a class="research-hero__contact" href="mailto:info@gafoh.org">${icon('mail', 'ico--sm')}<span>info@gafoh.org</span></a>
+      <a class="research-hero__contact" href="tel:+94702488090">${icon('phone', 'ico--sm')}<span>+94 70 248 8090</span></a>
+    </div>
   </div>
 </section>
 
+<!-- ── About ─────────────────────────────────────────────────── -->
 <section class="section">
   <div class="wrap">
-    <div class="split split--align-center" style="gap:48px">
-      <div style="flex:2">
-        <p class="eyebrow">Our Approach</p>
-        <h2>Promoting responsible research for healthier people, healthier animals and a healthier environment.</h2>
-        <div class="prose">
-          <p class="lead-text">At Global Alliance for Food and One Health (GAFOH), we support researchers, institutions, organizations and project partners in planning and conducting research that is scientifically sound, ethically responsible, socially appropriate and aligned with One Health principles.</p>
-          <p>Our approach recognizes that the health and wellbeing of people, animals, food systems and the environment are interconnected. We therefore encourage responsible research practices that consider scientific integrity, animal welfare, human and community wellbeing, environmental responsibility and public-health implications throughout the research lifecycle.</p>
+    <div class="research-about">
+      <p class="eyebrow">Our Approach</p>
+      <p class="research-about__lead">At Global Alliance for Food and One Health (GAFOH), we support researchers, institutions, organizations and project partners in planning and conducting research that is scientifically sound, ethically responsible, socially appropriate and aligned with One Health principles.</p>
+      <p class="research-about__body">Our approach recognizes that the health and wellbeing of people, animals, food systems and the environment are interconnected. We therefore encourage responsible research practices that consider scientific integrity, animal welfare, human and community wellbeing, environmental responsibility and public-health implications throughout the research lifecycle.</p>
+      <div class="research-pillars">
+        <div class="research-pillar">
+          <span class="research-pillar__icon" style="background:rgba(47,158,87,.1);color:var(--leaf)">${icon('heart')}</span>
+          <strong>People</strong><span>Human wellbeing &amp; community</span>
         </div>
-      </div>
-      <div style="flex:1;min-width:240px">
-        <div class="info-card" style="background:var(--tint);border-color:transparent">
-          <h4 style="margin-top:0">Quick Contact</h4>
-          <p style="margin:0 0 12px;font-size:.9rem">To submit a research proposal or enquire about our services:</p>
-          <a class="contact-link" href="mailto:info@gafoh.org" style="display:flex;align-items:center;gap:8px;color:var(--green-d);text-decoration:none;font-weight:600">${icon('mail', 'ico--sm')}<span>info@gafoh.org</span></a>
-          <a class="contact-link" href="tel:+94702488090" style="display:flex;align-items:center;gap:8px;margin-top:8px;color:var(--green-d);text-decoration:none;font-weight:600">${icon('phone', 'ico--sm')}<span>+94 70 248 8090</span></a>
+        <div class="research-pillar">
+          <span class="research-pillar__icon" style="background:rgba(201,162,39,.1);color:var(--gold)">${icon('sprout')}</span>
+          <strong>Animals</strong><span>Welfare &amp; ethical use</span>
+        </div>
+        <div class="research-pillar">
+          <span class="research-pillar__icon" style="background:rgba(27,107,58,.1);color:var(--green)">${icon('globe')}</span>
+          <strong>Environment</strong><span>Food systems &amp; ecosystems</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── Services ──────────────────────────────────────────────── -->
 <section class="section section--tinted" id="services">
   <div class="wrap">
     <div class="section-head section-head--center">
       <p class="eyebrow">Service Portfolio</p>
       <h2>What We Provide</h2>
+      <p class="subtitle">Comprehensive support across the full research lifecycle — from proposal design to dissemination.</p>
     </div>
-    <div class="focus-sections" style="gap:20px">
+    <div class="research-grid">
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--1">${icon('eye')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">01</span>
-            <span class="focus-section__name">Research Proposal Review</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(47,158,87,.1);color:var(--leaf)">${icon('eye')}</span>
+          <div><span class="research-card__num">01</span><h4 class="research-card__name">Research Proposal Review</h4></div>
         </div>
         <p>Independent technical and methodological review of research proposals, study protocols, project designs and research instruments to identify scientific, ethical, operational and One Health considerations before implementation.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--2">${icon('shield')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">02</span>
-            <span class="focus-section__name">Research Ethics &amp; Compliance Guidance</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(201,162,39,.1);color:var(--gold)">${icon('shield')}</span>
+          <div><span class="research-card__num">02</span><h4 class="research-card__name">Research Ethics &amp; Compliance Guidance</h4></div>
         </div>
         <p>Guidance on ethical principles, responsible research practices, animal welfare, human-participant considerations, informed consent, confidentiality, risk assessment, biosafety, environmental considerations and relevant institutional or regulatory requirements.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--3">${icon('book')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">03</span>
-            <span class="focus-section__name">Ethical Compliance Reports</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(27,107,58,.1);color:var(--green)">${icon('book')}</span>
+          <div><span class="research-card__num">03</span><h4 class="research-card__name">Ethical Compliance Reports</h4></div>
         </div>
         <p>Preparation of structured ethical and responsible-research compliance assessments identifying areas of compliance, potential ethical concerns, required safeguards and recommendations for improvement.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--4">${icon('chart')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">04</span>
-            <span class="focus-section__name">Project Monitoring &amp; Research Oversight</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(22,36,27,.07);color:var(--green-d)">${icon('chart')}</span>
+          <div><span class="research-card__num">04</span><h4 class="research-card__name">Project Monitoring &amp; Research Oversight</h4></div>
         </div>
         <p>Periodic monitoring and review of research and development projects to assess implementation against approved protocols, ethical commitments, project objectives, risk-management measures and responsible research standards.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--1">${icon('heart')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">05</span>
-            <span class="focus-section__name">Responsible Animal Research</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(47,158,87,.1);color:var(--leaf)">${icon('heart')}</span>
+          <div><span class="research-card__num">05</span><h4 class="research-card__name">Responsible Animal Research</h4></div>
         </div>
         <p>Guidance on the ethical and scientific use of animals in research, including animal welfare, appropriate study design, reduction of unnecessary animal use, humane procedures and responsible management of experimental animals.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--2">${icon('users')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">06</span>
-            <span class="focus-section__name">Social &amp; Community Research Ethics</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(201,162,39,.1);color:var(--gold)">${icon('users')}</span>
+          <div><span class="research-card__num">06</span><h4 class="research-card__name">Social &amp; Community Research Ethics</h4></div>
         </div>
         <p>Guidance for studies involving communities, households, farmers, workers and other social groups, with emphasis on dignity, voluntary participation, informed consent, privacy, confidentiality, cultural sensitivity and minimization of potential harm.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--3">${icon('globe')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">07</span>
-            <span class="focus-section__name">Public Health &amp; One Health Assessment</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(27,107,58,.1);color:var(--green)">${icon('globe')}</span>
+          <div><span class="research-card__num">07</span><h4 class="research-card__name">Public Health &amp; One Health Assessment</h4></div>
         </div>
         <p>Assessment of research and projects for potential implications for animal health, human health, food safety, environmental health and emerging One Health risks.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--4">${icon('flag')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">08</span>
-            <span class="focus-section__name">Research Integrity &amp; Good Research Practice</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(22,36,27,.07);color:var(--green-d)">${icon('flag')}</span>
+          <div><span class="research-card__num">08</span><h4 class="research-card__name">Research Integrity &amp; Good Research Practice</h4></div>
         </div>
         <p>Support for researchers in strengthening transparency, accountability, appropriate data management, responsible authorship, conflict-of-interest management, reporting practices and research integrity.</p>
-      </div>
+      </article>
 
-      <div class="focus-section" style="padding:32px">
-        <div class="focus-section__hd" style="margin-bottom:16px;padding-bottom:16px">
-          <span class="focus-section__bubble focus-section__bubble--1">${icon('arrow')}</span>
-          <div class="focus-section__label">
-            <span class="focus-section__num">09</span>
-            <span class="focus-section__name">Responsible Research Guidance</span>
-          </div>
+      <article class="research-card">
+        <div class="research-card__head">
+          <span class="research-card__icon" style="background:rgba(47,158,87,.1);color:var(--leaf)">${icon('arrow')}</span>
+          <div><span class="research-card__num">09</span><h4 class="research-card__name">Responsible Research Guidance</h4></div>
         </div>
         <p>Practical advice throughout the research lifecycle—from concept development and protocol preparation to implementation, monitoring, analysis, reporting and dissemination.</p>
-      </div>
+      </article>
 
     </div>
   </div>
 </section>
 
-<section class="section" id="fees">
+<!-- ── Fees ──────────────────────────────────────────────────── -->
+<section class="section section--dark" id="fees">
   <div class="wrap">
     <div class="section-head section-head--center">
-      <p class="eyebrow">Transparent Pricing</p>
-      <h2>Nominal Service Fees</h2>
-      <p class="subtitle">Global Alliance for Food and One Health (GAFOH) Sri Lanka, a private consultancy organization. We work as a team to support and serve communities across Sri Lanka. As part of our activities, GAFOH also considers research proposals for ethical compliance review. We charge only a nominal fee for this service:</p>
+      <p class="eyebrow eyebrow--gold">Transparent Pricing</p>
+      <h2 class="text-white">Nominal Service Fees</h2>
+      <p class="subtitle text-light" style="max-width:680px;margin-inline:auto">Global Alliance for Food and One Health (GAFOH) Sri Lanka, a private consultancy organization. We work as a team to support and serve communities across Sri Lanka. As part of our activities, GAFOH also considers research proposals for ethical compliance review. We charge only a nominal fee for this service:</p>
     </div>
-    <div class="research-fees">
-      <div class="fee-card">
+    <div class="research-fees research-fees--dark">
+      <div class="fee-card fee-card--dark">
         <div class="fee-card__type">Foreign-Funded Projects</div>
         <div class="fee-card__amount">USD 100</div>
         <p class="fee-card__note">Per proposal or ethical compliance assessment</p>
       </div>
-      <div class="fee-card fee-card--featured">
+      <div class="fee-card fee-card--dark fee-card--featured-dark">
         <div class="fee-card__type">Locally Funded Projects</div>
         <div class="fee-card__amount">LKR 25,000</div>
         <p class="fee-card__note">Per proposal or ethical compliance assessment</p>
       </div>
-      <div class="fee-card">
+      <div class="fee-card fee-card--dark">
         <div class="fee-card__type">Local Volunteer / Student Research / Low Income Community Based Projects</div>
         <div class="fee-card__amount">LKR 10,000</div>
         <p class="fee-card__note">Per proposal or ethical compliance assessment</p>
       </div>
     </div>
-    <p class="research-fee-note">We are pleased to consider supporting worthwhile, community-oriented research projects that demonstrate scientific merit, ethical responsibility and meaningful potential to benefit communities, animal health, public health and the environment.</p>
+    <p class="research-fee-note" style="color:rgba(255,255,255,.65)">We are pleased to consider supporting worthwhile, community-oriented research projects that demonstrate scientific merit, ethical responsibility and meaningful potential to benefit communities, animal health, public health and the environment.</p>
   </div>
 </section>
 
-<section class="section section--tinted">
+<!-- ── Disclaimer ─────────────────────────────────────────────── -->
+<section class="section">
   <div class="wrap">
     <div class="disclaimer-box">
       <div class="disclaimer-box__icon">${icon('shield')}</div>
@@ -1024,6 +1010,7 @@ const research = () => layout({
   </div>
 </section>
 
+<!-- ── CTA ────────────────────────────────────────────────────── -->
 <section class="banner-cta">
   <div class="wrap banner-cta__in">
     <div>
