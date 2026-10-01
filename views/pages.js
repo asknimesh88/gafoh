@@ -258,36 +258,25 @@ const home = () => layout({
   </div>
 </section>
 
-<!-- Interactive Focus Areas -->
+<!-- Focus Areas -->
 <section class="section section--dark" id="focus">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow eyebrow--gold">Core Competencies</p>
       <h2 class="text-white">Four Areas of Focus</h2>
-      <p class="subtitle text-light">Select an area to explore our research paradigms, practices, and intervention programs.</p>
+      <p class="subtitle text-light">Our research paradigms, practices, and intervention programs across four interconnected domains.</p>
     </div>
 
-    <div class="tabs-nav" role="tablist">
-      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="agri">
-        ${icon('sprout')}
-        <span>Agriculture</span>
-      </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="sus">
-        ${icon('leaf')}
-        <span>Sustainability</span>
-      </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="health">
-        ${icon('heart')}
-        <span>Health &amp; Safety</span>
-      </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="know">
-        ${icon('book')}
-        <span>Knowledge Transfer</span>
-      </button>
-    </div>
+    <div class="focus-sections">
 
-    <div class="tab-panels">
-      <div class="tab-panel active" id="agri">
+      <div class="focus-section" id="agri">
+        <div class="focus-section__hd">
+          <span class="focus-section__bubble focus-section__bubble--1">${icon('sprout')}</span>
+          <div class="focus-section__label">
+            <span class="focus-section__num">01</span>
+            <span class="focus-section__name">Agriculture</span>
+          </div>
+        </div>
         <div class="tab-panel__split">
           <div>
             <h3>Empowering regenerative, high-yield agriculture</h3>
@@ -315,7 +304,14 @@ const home = () => layout({
         </div>
       </div>
 
-      <div class="tab-panel" id="sus" hidden>
+      <div class="focus-section" id="sus">
+        <div class="focus-section__hd">
+          <span class="focus-section__bubble focus-section__bubble--2">${icon('leaf')}</span>
+          <div class="focus-section__label">
+            <span class="focus-section__num">02</span>
+            <span class="focus-section__name">Sustainability</span>
+          </div>
+        </div>
         <div class="tab-panel__split">
           <div>
             <h3>The 10-Point Sustainability Standard</h3>
@@ -342,12 +338,18 @@ const home = () => layout({
         </div>
       </div>
 
-      <div class="tab-panel" id="health" hidden>
+      <div class="focus-section" id="health">
+        <div class="focus-section__hd">
+          <span class="focus-section__bubble focus-section__bubble--3">${icon('heart')}</span>
+          <div class="focus-section__label">
+            <span class="focus-section__num">03</span>
+            <span class="focus-section__name">Health &amp; Safety</span>
+          </div>
+        </div>
         <div class="tab-panel__split">
           <div>
             <h3>Biosecurity, Nutrition, and One Health Vectors</h3>
             <p>Human health is inseparable from animal welfare and environmental safety. We address the root drivers of epidemic risk and chronic malnutrition.</p>
-
             <div class="defs-grid">
               <div class="def-card">
                 <h5>Nutrition &amp; Food Security</h5>
@@ -374,7 +376,14 @@ const home = () => layout({
         </div>
       </div>
 
-      <div class="tab-panel" id="know" hidden>
+      <div class="focus-section" id="know">
+        <div class="focus-section__hd">
+          <span class="focus-section__bubble focus-section__bubble--4">${icon('book')}</span>
+          <div class="focus-section__label">
+            <span class="focus-section__num">04</span>
+            <span class="focus-section__name">Knowledge Transfer</span>
+          </div>
+        </div>
         <div class="tab-panel__split">
           <div>
             <h3>Knowledge Sharing &amp; Demonstration Centers</h3>
@@ -398,6 +407,7 @@ const home = () => layout({
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>

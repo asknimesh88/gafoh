@@ -16,7 +16,7 @@ const layout = ({ title, description, body, path = '' }) => `<!doctype html>
 <meta name="description" content="${description}">
 <meta name="theme-color" content="#1b6b3a">
 <link rel="icon" href="/img/favicon.png">
-<link rel="stylesheet" href="/css/style.css?v=10">
+<link rel="stylesheet" href="/css/style.css?v=11">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
