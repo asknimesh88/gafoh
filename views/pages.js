@@ -13,6 +13,7 @@ const icons = {
   shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
   arrow: '<path d="M5 12h14M12 5l7 7-7 7"/>',
   check: '<path d="M20 6L9 17l-5-5"/>',
+  whatsapp: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
   phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 11.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>',
   mail: '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
 };
@@ -713,28 +714,29 @@ const clinic = () => layout({
         </div>
       </div>
       <div class="clinic-badge-wrap">
-        <div class="diagram-card">
-          <div class="diagram-head">
-            <div>
-              <p class="eyebrow" style="margin:0 0 4px">Under GAFOH</p>
-              <h3 style="margin:0">Animal Care &amp; Support</h3>
-            </div>
-            <span class="badge badge--green">Active</span>
+        <div class="schedule-card">
+          <div class="schedule-card__head">
+            <h4>Consultation Hours</h4>
+            <span class="badge badge--green">Open Daily</span>
           </div>
-          <div class="triad-display">
-            <div class="triad-node" style="--accent:var(--leaf)">
-              <span class="triad-icon" style="background:rgba(47,158,87,.12);color:var(--leaf)">${icon('heart')}</span>
-              <div><h4>Compassionate Care</h4><p>Animal welfare at the core of every consultation</p></div>
-            </div>
-            <div class="triad-node" style="--accent:var(--gold)">
-              <span class="triad-icon" style="background:rgba(201,162,39,.12);color:var(--gold)">${icon('shield')}</span>
-              <div><h4>Professional Services</h4><p>Qualified veterinary staff and proper clinical facilities</p></div>
-            </div>
-            <div class="triad-node" style="--accent:var(--green)">
-              <span class="triad-icon" style="background:rgba(27,107,58,.12);color:var(--green)">${icon('globe')}</span>
-              <div><h4>One Health Aligned</h4><p>Animal health as part of community and environmental health</p></div>
-            </div>
-          </div>
+          <table class="hours-table">
+            <tr>
+              <th>Mon &ndash; Fri</th>
+              <td><span class="time-slot">5:30 &ndash; 8:30 PM</span></td>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <td><span class="time-slot">8:30 &ndash; 11:30 AM</span><span class="time-slot">5:30 &ndash; 8:30 PM</span></td>
+            </tr>
+            <tr>
+              <th>Sunday</th>
+              <td><span class="time-slot">8:30 &ndash; 11:30 AM</span><span class="time-slot">5:30 &ndash; 8:30 PM</span></td>
+            </tr>
+            <tr class="closed-row">
+              <th>Poya Holidays</th>
+              <td><span class="closed-tag">Closed</span></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
@@ -797,9 +799,39 @@ const clinic = () => layout({
         <p>In-clinic dispensary stocking veterinary medicines, supplements, prescription diets, grooming products, and specialty pet nutrition brands.</p>
       </div>
       <div class="pillar-box">
-        <div class="pillar-box__top"><span class="pillar-box__num">04</span><span class="pillar-box__tag">Boarding</span></div>
-        <h4>Animal Boarding &amp; Kenneling</h4>
-        <p>Safe, supervised boarding facilities for dogs and cats, with proper kennel accommodation and sanitation standards.</p>
+        <div class="pillar-box__top"><span class="pillar-box__num">04</span><span class="pillar-box__tag">Breeding</span></div>
+        <h4>Animal Breeding &amp; Support Services</h4>
+        <p>We provide professional animal breeding and reproductive support services designed to improve reproductive efficiency, genetic performance, animal health, and sustainable livestock production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="appointments">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">WhatsApp Request</p>
+      <h2>Book an Appointment</h2>
+      <p class="subtitle">Surgery and Breeding Consultations require a prior appointment. Send us a WhatsApp message to reserve your slot.</p>
+    </div>
+    <div class="appt-cards">
+      <div class="appt-card">
+        <div class="appt-card__icon" style="background:rgba(27,107,58,.1);color:var(--green)">${icon('shield')}</div>
+        <h3>Surgery Appointment</h3>
+        <p>Pre-book your surgical consultation or procedure. Our veterinary team will confirm your appointment and provide pre-operative guidance.</p>
+        <a class="btn btn--primary appt-card__btn" href="https://wa.me/94702488090?text=I+would+like+to+book+a+Surgery+appointment+at+V+Pet+Care+Animal+Clinic" target="_blank" rel="noopener">
+          ${icon('whatsapp', 'ico--sm')}<span>Request via WhatsApp</span>
+        </a>
+        <p class="appt-card__note">Contact: +94 70 248 8090</p>
+      </div>
+      <div class="appt-card appt-card--gold">
+        <div class="appt-card__icon" style="background:rgba(201,162,39,.12);color:var(--gold)">${icon('heart')}</div>
+        <h3>Breeding Consultation</h3>
+        <p>Schedule a professional breeding and reproductive support consultation. We assess health, genetics, and reproductive timing for optimal outcomes.</p>
+        <a class="btn btn--gold appt-card__btn" href="https://wa.me/94702488090?text=I+would+like+to+book+a+Breeding+Consultation+at+V+Pet+Care+Animal+Clinic" target="_blank" rel="noopener">
+          ${icon('whatsapp', 'ico--sm')}<span>Request via WhatsApp</span>
+        </a>
+        <p class="appt-card__note">Contact: +94 70 248 8090</p>
       </div>
     </div>
   </div>
@@ -808,9 +840,9 @@ const clinic = () => layout({
 <section class="banner-cta">
   <div class="wrap banner-cta__in">
     <div>
-      <p class="eyebrow eyebrow--gold">Book an Appointment</p>
+      <p class="eyebrow eyebrow--gold">General Enquiries</p>
       <h2>Bring your animal in for a consultation</h2>
-      <p>Contact us to schedule a veterinary consultation, surgical assessment, or boarding arrangement at V Pet Care Animal Clinic.</p>
+      <p>Walk-ins welcome during consultation hours. For surgery and breeding, please book in advance via WhatsApp.</p>
     </div>
     <div class="banner-cta__btns">
       <a class="btn btn--gold" href="tel:+94702488090">Call +94 70 248 8090</a>

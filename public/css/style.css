@@ -427,3 +427,17 @@ p { margin: 0 0 1em; }
   .research-grid { grid-template-columns: 1fr; }
   .research-hero__links { flex-direction: column; }
 }
+
+/* ── Clinic appointment cards ────────────────────────────────── */
+.appt-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 860px; margin-inline: auto; }
+.appt-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 40px 36px; box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: flex-start; }
+.appt-card--gold { border-color: var(--gold); border-width: 2px; background: #fffdf5; }
+.appt-card__icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.appt-card h3 { font-size: 1.25rem; margin: 0 0 12px; }
+.appt-card p { color: var(--muted); margin: 0 0 24px; font-size: .95rem; flex: 1; }
+.appt-card__btn { display: inline-flex; align-items: center; gap: 8px; }
+.appt-card__note { font-size: .8rem; color: var(--muted); margin: 12px 0 0; }
+@media (max-width: 600px) {
+  .appt-cards { grid-template-columns: 1fr; }
+  .appt-card { padding: 28px 24px; }
+}
