@@ -49,7 +49,7 @@ const layout = ({ title, description, body, path = '', schema = '' }) => `<!doct
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${description}">
 <link rel="icon" href="/img/favicon.png">
-<link rel="stylesheet" href="/css/style.css?v=15">
+<link rel="stylesheet" href="/css/style.css?v=16">
 <script type="application/ld+json">${schema || orgSchema}</script>
 </head>
 <body>

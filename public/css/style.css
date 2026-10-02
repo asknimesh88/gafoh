@@ -462,3 +462,25 @@ p { margin: 0 0 1em; }
   .clinic-about .split { gap: 40px; }
   .clinic-hours-card { padding: 24px; }
 }
+
+/* ── Appointment cards v2 ────────────────────────────────────── */
+.appt-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 820px; margin-inline: auto; }
+.appt-card-v2 { background: #fff; border-radius: var(--r); overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.25); display: flex; flex-direction: column; }
+.appt-card-v2__banner { display: flex; align-items: center; justify-content: center; padding: 36px 0; }
+.appt-card-v2__banner--green { background: var(--green); }
+.appt-card-v2__banner--gold { background: var(--gold); }
+.appt-card-v2__ico { width: 64px; height: 64px; border-radius: 18px; background: rgba(255,255,255,.18); display: flex; align-items: center; justify-content: center; color: #fff; }
+.appt-card-v2__ico svg { width: 32px; height: 32px; stroke-width: 1.6; }
+.appt-card-v2__body { padding: 32px; display: flex; flex-direction: column; flex: 1; }
+.appt-card-v2__tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); background: rgba(27,107,58,.08); border-radius: 4px; padding: 3px 9px; margin-bottom: 12px; width: fit-content; }
+.appt-card-v2__tag--gold { color: var(--gold); background: rgba(201,162,39,.1); }
+.appt-card-v2__body h3 { font-size: 1.25rem; color: var(--ink); margin: 0 0 12px; }
+.appt-card-v2__body p { font-size: .9rem; color: var(--muted); margin: 0 0 24px; line-height: 1.65; flex: 1; }
+.appt-card-v2__wa { display: flex; align-items: center; justify-content: center; gap: 9px; padding: 14px 24px; border-radius: 40px; font-weight: 700; font-size: .95rem; text-decoration: none; transition: opacity .2s, transform .2s; }
+.appt-card-v2__wa:hover { opacity: .88; transform: translateY(-1px); }
+.appt-card-v2__wa--green { background: var(--green); color: #fff; }
+.appt-card-v2__wa--gold { background: var(--gold); color: #fff; }
+.appt-card-v2__contact { display: flex; align-items: center; gap: 7px; font-size: .82rem; color: var(--muted); margin: 14px 0 0; justify-content: center; }
+@media (max-width: 600px) {
+  .appt-cards { grid-template-columns: 1fr; }
+}
