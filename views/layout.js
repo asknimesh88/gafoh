@@ -49,7 +49,7 @@ const layout = ({ title, description, body, path = '', schema = '' }) => `<!doct
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${description}">
 <link rel="icon" href="/img/favicon.png">
-<link rel="stylesheet" href="/css/style.css?v=17">
+<link rel="stylesheet" href="/css/style.css?v=18">
 <script type="application/ld+json">${schema || orgSchema}</script>
 </head>
 <body>
@@ -102,6 +102,9 @@ const layout = ({ title, description, body, path = '', schema = '' }) => `<!doct
       <a class="btn btn--gold" href="/support">Donate Now</a>
       <a class="btn btn--ghost-white" href="/#contact">Get in touch</a>
     </div>
+  </div>
+  <div class="wrap footer__disclaimer">
+    <p><strong>Research Ethics &amp; Compliance Disclaimer:</strong> GAFOH research ethics and compliance services provide independent technical and responsible-research guidance. Where formal ethical approval, regulatory authorization or institutional clearance is legally or institutionally required, researchers remain responsible for obtaining approval from the appropriate recognized ethics review committee, regulatory authority or institution if necessary.</p>
   </div>
   <div class="wrap footer__legal">
     <span>&copy; ${new Date().getFullYear()} GAFOH Sri Lanka. All rights reserved.</span>

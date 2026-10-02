@@ -489,3 +489,8 @@ p { margin: 0 0 1em; }
 .header-cta { padding: 10px 20px; font-size: .88rem; letter-spacing: .01em; box-shadow: 0 4px 14px rgba(201,162,39,.35); }
 .header-cta:hover { box-shadow: 0 6px 20px rgba(201,162,39,.45); transform: translateY(-1px); }
 @media (max-width: 860px) { .header-cta { display: none; } }
+
+/* ── Footer disclaimer ───────────────────────────────────────── */
+.footer__disclaimer { border-top: 1px solid rgba(255,255,255,.08); padding: 16px 0; }
+.footer__disclaimer p { font-size: .72rem; line-height: 1.6; color: rgba(255,255,255,.35); margin: 0; }
+.footer__disclaimer strong { color: rgba(255,255,255,.5); font-weight: 600; }
