@@ -825,6 +825,51 @@ const clinic = () => layout({
   </div>
 </section>
 
+<section class="section kids-pets-section">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Community &amp; Education</p>
+      <h2>Children, Pets and Responsible Compassion</h2>
+      <p class="subtitle kids-pets__lead">Pets have been loyal companions and trusted friends of humans for generations. Beyond companionship, responsible interaction with animals provides children with valuable opportunities to learn empathy, compassion, kindness, responsibility, communication and respect for life.</p>
+    </div>
+
+    <div class="kids-pets__values">
+      <div class="kids-pets__value">${icon('heart', 'ico--md kids-pets__vico')} <span>Empathy &amp; Compassion</span></div>
+      <div class="kids-pets__value">${icon('shield', 'ico--md kids-pets__vico')} <span>Responsibility</span></div>
+      <div class="kids-pets__value">${icon('globe', 'ico--md kids-pets__vico')} <span>One Health Awareness</span></div>
+      <div class="kids-pets__value">${icon('check', 'ico--md kids-pets__vico')} <span>Life Skills</span></div>
+    </div>
+
+    <div class="kids-pets__body">
+      <div class="kids-pets__prose">
+        <p>At V-Pet Care Animal Clinic and GAFOH – Global Alliance for Food and One Health, we promote age-appropriate learning about pet behaviour, safe handling, animal welfare, responsible pet ownership and the human–animal bond, with appropriate attention to public health and One Health principles.</p>
+        <p>In an increasingly digital generation, meaningful interaction with animals can help children develop a deeper understanding of living beings and the responsibilities that come with caring for them. We work with parents and communities to encourage children to learn through responsible pet ownership, helping them develop practical life skills, empathy and a sense of responsibility that can extend beyond animals into their relationships with people and the wider environment.</p>
+      </div>
+      <div class="kids-pets__goal">
+        <p class="kids-pets__goal-label">Our Goal</p>
+        <p>Our goal is not simply to teach children how to care for pets, but to help nurture a generation that understands, respects and cares for living beings.</p>
+      </div>
+    </div>
+
+    <div class="kids-pets__partners">
+      <div class="kids-pets__partner">
+        <span class="kids-pets__partner-dot kids-pets__partner-dot--green"></span>
+        <div>
+          <strong>V-Pet Care Animal Clinic</strong>
+          <span>Professional Animal Health Advisory Services</span>
+        </div>
+      </div>
+      <div class="kids-pets__partner">
+        <span class="kids-pets__partner-dot kids-pets__partner-dot--gold"></span>
+        <div>
+          <strong>GAFOH – Global Alliance for Food and One Health</strong>
+          <span>Promoting responsible, compassionate and One Health–oriented communities.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section--dark" id="appointments">
   <div class="wrap">
     <div class="section-head section-head--center">

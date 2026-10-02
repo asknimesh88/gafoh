@@ -490,6 +490,29 @@ p { margin: 0 0 1em; }
 .header-cta:hover { box-shadow: 0 6px 20px rgba(201,162,39,.45); transform: translateY(-1px); }
 @media (max-width: 860px) { .header-cta { display: none; } }
 
+/* ── Children, Pets & Responsible Compassion section ────────── */
+.kids-pets-section { background: #fff; }
+.kids-pets__lead { font-size: 1.08rem; line-height: 1.75; max-width: 760px; margin: 0 auto; color: var(--ink); }
+.kids-pets__values { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin: 36px 0; }
+.kids-pets__value { display: flex; align-items: center; gap: 10px; background: var(--tint); border: 1px solid var(--line); border-radius: 40px; padding: 10px 20px; font-size: .9rem; font-weight: 600; color: var(--ink); }
+.kids-pets__vico { color: var(--green); flex-shrink: 0; }
+.kids-pets__body { display: grid; grid-template-columns: 1fr 380px; gap: 40px; align-items: start; margin-bottom: 44px; }
+.kids-pets__prose p { color: var(--ink); line-height: 1.8; margin-bottom: 16px; }
+.kids-pets__prose p:last-child { margin-bottom: 0; }
+.kids-pets__goal { background: linear-gradient(135deg, #f0f9f3 0%, #e8f5ec 100%); border-left: 4px solid var(--green); border-radius: 0 12px 12px 0; padding: 28px 28px 28px 24px; }
+.kids-pets__goal-label { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin: 0 0 10px; }
+.kids-pets__goal p:last-child { font-size: 1.05rem; line-height: 1.75; color: var(--ink); font-style: italic; margin: 0; }
+.kids-pets__partners { display: flex; flex-wrap: wrap; gap: 16px; border-top: 1px solid var(--line); padding-top: 32px; }
+.kids-pets__partner { display: flex; align-items: flex-start; gap: 14px; flex: 1; min-width: 260px; background: var(--tint); border-radius: 12px; padding: 18px 20px; }
+.kids-pets__partner-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+.kids-pets__partner-dot--green { background: var(--green); }
+.kids-pets__partner-dot--gold { background: var(--gold); }
+.kids-pets__partner strong { display: block; font-size: .95rem; color: var(--ink); margin-bottom: 4px; }
+.kids-pets__partner span { font-size: .82rem; color: var(--muted); line-height: 1.5; }
+@media (max-width: 760px) {
+  .kids-pets__body { grid-template-columns: 1fr; }
+}
+
 /* ── Footer disclaimer ───────────────────────────────────────── */
 .footer__disclaimer { border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; }
 .footer__disclaimer p { font-size: .78rem; line-height: 1.65; color: rgba(255,255,255,.55); margin: 0; }
