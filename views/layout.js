@@ -49,7 +49,7 @@ const layout = ({ title, description, body, path = '', schema = '' }) => `<!doct
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${description}">
 <link rel="icon" href="/img/favicon.png">
-<link rel="stylesheet" href="/css/style.css?v=16">
+<link rel="stylesheet" href="/css/style.css?v=17">
 <script type="application/ld+json">${schema || orgSchema}</script>
 </head>
 <body>
@@ -64,7 +64,7 @@ const layout = ({ title, description, body, path = '', schema = '' }) => `<!doct
         const here = base && base === path ? ' aria-current="page"' : '';
         return `<a href="${href}"${here}>${label}</a>`;
       }).join('')}
-      <a class="btn btn--sm" href="/#contact">Get in touch</a>
+      <a class="btn btn--gold header-cta" href="/#contact"><span>Get in touch</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </nav>
   </div>
 </header>
