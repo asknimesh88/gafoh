@@ -441,3 +441,24 @@ p { margin: 0 0 1em; }
   .appt-cards { grid-template-columns: 1fr; }
   .appt-card { padding: 28px 24px; }
 }
+
+/* ── Clinic about section redesign ──────────────────────────── */
+.clinic-about__lead { font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,.92); margin: 0 0 16px; line-height: 1.65; }
+.clinic-about__body { font-size: .95rem; color: rgba(255,255,255,.65); margin: 0 0 14px; line-height: 1.7; }
+.clinic-feats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.12); }
+.clinic-feat { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); color: rgba(255,255,255,.85); border-radius: 40px; padding: 8px 16px; font-size: .85rem; font-weight: 600; }
+
+/* Frosted hours card */
+.clinic-hours-card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: var(--r); padding: 32px; }
+.clinic-hours-card__head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.clinic-hours-card h4 { color: #fff; font-size: 1.15rem; margin: 0; }
+.clinic-hours-rows { display: flex; flex-direction: column; margin-bottom: 28px; }
+.hours-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.08); gap: 12px; }
+.hours-row:last-child { border-bottom: none; }
+.hours-day { font-size: .88rem; font-weight: 600; color: rgba(255,255,255,.65); white-space: nowrap; }
+.clinic-time-slot { background: rgba(255,255,255,.12); color: rgba(255,255,255,.92); border-radius: 6px; padding: 4px 10px; font-size: .78rem; font-weight: 600; white-space: nowrap; }
+
+@media (max-width: 860px) {
+  .clinic-about .split { gap: 40px; }
+  .clinic-hours-card { padding: 24px; }
+}

@@ -701,44 +701,62 @@ const clinic = () => layout({
   </div>
 </section>
 
-<section class="section section--tinted">
+<section class="section section--dark clinic-about">
   <div class="wrap">
-    <div class="split split--align-center">
+    <div class="split split--align-center" style="gap:60px">
+
       <div>
-        <p class="eyebrow">About the Clinic</p>
-        <h2>A trusted partner in animal health</h2>
-        <div class="prose">
-          <p class="lead-text">V Pet Care Animal Clinic operates under GAFOH's Animal Care and Support Services, bringing professional veterinary expertise and compassionate animal welfare together in one accessible facility.</p>
-          <p>Our clinic provides a full spectrum of services — from routine wellness consultations and preventive care to surgical procedures and in-house pharmaceutical dispensary. We are equipped to care for companion animals including dogs and cats, with dedicated facilities for examination, treatment, and boarding.</p>
-          <p>As part of GAFOH's One Health commitment, animal welfare is treated as inseparable from human and environmental health. V Pet Care reflects this ethos: healthy animals, healthy families, healthy communities.</p>
+        <p class="eyebrow eyebrow--gold">About the Clinic</p>
+        <h2 class="text-white">A trusted partner in animal health</h2>
+        <p class="clinic-about__lead">V Pet Care Animal Clinic operates under GAFOH's Animal Care and Support Services, bringing professional veterinary expertise and compassionate animal welfare together in one accessible facility.</p>
+        <p class="clinic-about__body">Our clinic provides a full spectrum of services — from routine wellness consultations and preventive care to surgical procedures and in-house pharmaceutical dispensary. We are equipped to care for companion animals including dogs and cats, with dedicated facilities for examination, treatment, and breeding support.</p>
+        <p class="clinic-about__body">As part of GAFOH's One Health commitment, animal welfare is treated as inseparable from human and environmental health. V Pet Care reflects this ethos: healthy animals, healthy families, healthy communities.</p>
+        <div class="clinic-feats">
+          <span class="clinic-feat">${icon('heart', 'ico--sm')}Compassionate Care</span>
+          <span class="clinic-feat">${icon('shield', 'ico--sm')}Professional Services</span>
+          <span class="clinic-feat">${icon('globe', 'ico--sm')}One Health Aligned</span>
         </div>
       </div>
-      <div class="clinic-badge-wrap">
-        <div class="schedule-card">
-          <div class="schedule-card__head">
-            <h4>Consultation Hours</h4>
-            <span class="badge badge--green">Open Daily</span>
+
+      <div style="min-width:300px;flex:none">
+        <div class="clinic-hours-card">
+          <div class="clinic-hours-card__head">
+            <div>
+              <p class="eyebrow eyebrow--gold" style="margin:0 0 4px">V Pet Care</p>
+              <h4>Consultation Hours</h4>
+            </div>
+            <span class="badge" style="background:var(--gold);color:#fff;border-color:transparent">Open Daily</span>
           </div>
-          <table class="hours-table">
-            <tr>
-              <th>Mon &ndash; Fri</th>
-              <td><span class="time-slot">5:30 &ndash; 8:30 PM</span></td>
-            </tr>
-            <tr>
-              <th>Saturday</th>
-              <td><span class="time-slot">8:30 &ndash; 11:30 AM</span><span class="time-slot">5:30 &ndash; 8:30 PM</span></td>
-            </tr>
-            <tr>
-              <th>Sunday</th>
-              <td><span class="time-slot">8:30 &ndash; 11:30 AM</span><span class="time-slot">5:30 &ndash; 8:30 PM</span></td>
-            </tr>
-            <tr class="closed-row">
-              <th>Poya Holidays</th>
-              <td><span class="closed-tag">Closed</span></td>
-            </tr>
-          </table>
+          <div class="clinic-hours-rows">
+            <div class="hours-row">
+              <span class="hours-day">Mon &ndash; Fri</span>
+              <span class="clinic-time-slot">5:30 &ndash; 8:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">
+                <span class="clinic-time-slot">8:30 &ndash; 11:30 AM</span>
+                <span class="clinic-time-slot">5:30 &ndash; 8:30 PM</span>
+              </div>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">
+                <span class="clinic-time-slot">8:30 &ndash; 11:30 AM</span>
+                <span class="clinic-time-slot">5:30 &ndash; 8:30 PM</span>
+              </div>
+            </div>
+            <div class="hours-row hours-row--closed">
+              <span class="hours-day">Poya Holidays</span>
+              <span style="font-style:italic;color:rgba(255,255,255,.4);font-size:.85rem">Closed</span>
+            </div>
+          </div>
+          <a class="btn btn--gold" href="tel:+94702488090" style="width:100%;justify-content:center">
+            ${icon('phone', 'ico--sm')}<span>Call +94 70 248 8090</span>
+          </a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
