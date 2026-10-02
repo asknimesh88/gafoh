@@ -491,6 +491,6 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) { .header-cta { display: none; } }
 
 /* ── Footer disclaimer ───────────────────────────────────────── */
-.footer__disclaimer { border-top: 1px solid rgba(255,255,255,.08); padding: 16px 0; }
-.footer__disclaimer p { font-size: .72rem; line-height: 1.6; color: rgba(255,255,255,.35); margin: 0; }
-.footer__disclaimer strong { color: rgba(255,255,255,.5); font-weight: 600; }
+.footer__disclaimer { border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; }
+.footer__disclaimer p { font-size: .78rem; line-height: 1.65; color: rgba(255,255,255,.55); margin: 0; }
+.footer__disclaimer strong { color: rgba(255,255,255,.75); font-weight: 600; }
