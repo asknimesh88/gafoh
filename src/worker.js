@@ -55,9 +55,7 @@ async function handleContact(request, env) {
   });
 
   if (!res.ok) {
-    const err = await res.text();
-    const keyPresent = !!env.BREVO_API_KEY;
-    return new Response(JSON.stringify({ error: err, keyPresent }), { status: 500, headers });
+    return new Response(JSON.stringify({ error: 'Could not send your message. Please try again.' }), { status: 500, headers });
   }
 
   return new Response(JSON.stringify({ ok: true }), { headers });
