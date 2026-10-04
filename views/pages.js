@@ -783,7 +783,7 @@ const clinic = () => layout({
       </figure>
       <figure class="clinic-gallery__item">
         <img src="/img/clinic/clinic-kennels.jpg" alt="Animal boarding kennels and holding cages at V Pet Care Animal Clinic with stainless steel wash station visible in the background" loading="lazy" width="450" height="600">
-        <figcaption>Boarding &amp; Kennel Facilities</figcaption>
+        <figcaption>Humane Handling of Pets</figcaption>
       </figure>
       <figure class="clinic-gallery__item">
         <img src="/img/clinic/clinic-waiting-area.jpg" alt="V Pet Care Animal Clinic waiting area with a large framed print of dogs and cats, wall-mounted fan, and adjacent medication cabinet" loading="lazy" width="450" height="600">
@@ -829,7 +829,7 @@ const clinic = () => layout({
   <div class="wrap">
     <div class="section-head section-head--center">
       <p class="eyebrow">Community &amp; Education</p>
-      <h2>Children, Pets and Responsible Compassion</h2>
+      <h2>Children, Pets and Responsibilities</h2>
       <p class="subtitle kids-pets__lead">Pets have been loyal companions and trusted friends of humans for generations. Beyond companionship, responsible interaction with animals provides children with valuable opportunities to learn empathy, compassion, kindness, responsibility, communication and respect for life.</p>
     </div>
 
